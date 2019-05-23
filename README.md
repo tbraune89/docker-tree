@@ -1,6 +1,8 @@
 # tree
 ![](https://images.microbadger.com/badges/image/tobibraune/tree:latest.svg) ![](https://images.microbadger.com/badges/version/tobibraune/tree:latest.svg)
 
+By mounting your local directory onto dockers `/data` directory you're able to list the files.
+
 You can use it like this: `docker run --rm -t -v /tmp:/data tree`
 
 ```
