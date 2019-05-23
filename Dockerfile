@@ -1,9 +1,11 @@
 FROM alpine:3.9
 
-ARG VCS_REF
+ARG DOCKER_TAG
+ARG SOURCE_COMMIT
 
 LABEL maintainer="Tobias Braune"
-LABEL org.label-schema.vcs-ref=$VCS_REF \
+LABEL org.label-schema.version=$DOCKER_TAG \
+    org.label-schema.vcs-ref=$SOURCE_COMMIT \
     org.label-schema.vcs-url="https://github.com/tbraune89/docker-tree"
 
 RUN apk --no-cache add tree=1.8.0-r0
